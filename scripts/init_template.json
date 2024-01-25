@@ -1,0 +1,96 @@
+{
+    "domains": [
+        "Freq",
+        "Time",
+        "Freq"
+    ],
+    "computation params": {
+		"cuba_alg": "Divonne",
+		"lower_borders": [
+			2.0,
+			0.0,
+			2.0
+		],
+		"nintervals": [
+			199,
+			7,
+			199
+		],
+		"nthreads": 11,
+		"repr": "SemiImpulsive",
+		"upper_borders": [
+			2.7,
+			20.0,
+			2.7
+		]
+	},
+	"cuba params": {
+		"epsabs": 0.0,
+		"epsrel": 0.01,
+		"flags": 0,
+		"maxeval": 100000,
+		"mineval": 10000
+	},
+    "system": {
+        "ntls": 2,
+        "omegas": [
+            2.293,
+            2.494
+        ],
+        "connections": [
+            {
+                "i": 0,
+                "j": 1,
+                "strength": 0.1
+            }
+        ],
+        "dipole moments": [
+            -1.1,
+            1.5
+        ],
+        "eta": 0.0001,
+        "relaxation rates": [
+            0.0,
+            0.0
+        ],
+        "pure dephasing rates": [
+            0.02,
+            0.02
+        ]
+    },
+    "interaction": {
+        "ncontacts": 3,
+        "envelopes": [
+            {
+                "ampl": 10.0,
+                "sigma": 0.0002,
+                "type": "Gaussian"
+            },
+            {
+                "ampl": 10.0,
+                "sigma": 0.0002,
+                "type": "Gaussian"
+            },
+            {
+                "ampl": 10.0,
+                "sigma": 0.0002,
+                "type": "Gaussian"
+            }
+        ],
+        "w0": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "phase_matches": 2,
+        "phase_match_signatures": [
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            1
+        ]
+    }
+}
+
