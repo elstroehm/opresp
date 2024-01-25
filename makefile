@@ -7,10 +7,10 @@ SOURCEFILES = $(wildcard src/*.cpp)
 HEADERFILES = $(wildcard src/*.hpp)
 OBJECTFILES = $(patsubst src/%.cpp,lib/$(CPP)/%.o,$(wildcard $(SOURCEFILES)))
 
-EIGENDIR = /home/jojo/masterthesis/qsim/external/eigen-3.4.0
-CUBADIR = /home/jojo/masterthesis/qsim/external/Cuba-4.2.2
-JSONDIR = /home/jojo/masterthesis/qsim/external/json
-HDF5DIR = /home/jojo/masterthesis/qsim/external/hdf5-1.14.1-2/hdf5
+EIGENDIR = PATH_TO_PROJECT/external/eigen-3.4.0
+CUBADIR = PATH_TO_PROJECT/external/Cuba-4.2.2
+JSONDIR = PATH_TO_PROJECT/external/json
+HDF5DIR = PATH_TO_PROJECT/external/hdf5-1.14.1-2/hdf5
 
 INCLUDEDIRS = -I$(EIGENDIR) -I$(CUBADIR) -I$(JSONDIR) -I$(HDF5DIR)/include
 LIBDIRS = -L$(CUBADIR) -L$(HDF5DIR)/lib
